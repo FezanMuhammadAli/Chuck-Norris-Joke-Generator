@@ -21,11 +21,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: -0px auto;
+  margin: 0px auto;
   width: 100%;
   max-width: 500px;
   height: 100%;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   border-radius: 10px;
   background: linear-gradient(to right, #ff416c, #ff4b2b);
@@ -43,12 +43,16 @@ button {
   border-radius: 10px;
   border: none;
   font-weight: bolder;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background-color: #ff416c;
   color: aliceblue;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-size: larger;
   margin-top: 10px;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 img {
@@ -64,16 +68,64 @@ img {
   align-items: center;
   margin: 0px auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
   height: 100%;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  background: linear-gradient(to left, #ff416c, #ff4b2b);
 }
 
 .joke {
   color: aliceblue;
   font-size: 1.5rem;
   margin-top: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+label {
+  color: aliceblue;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bolder;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: aliceblue;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: larger;
+  margin-top: 10px;
+}
+
+option {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bolder;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: lightblue;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: larger;
+  margin-top: 10px;
+}
+
+select:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  margin-top: 10px;
+  color: aliceblue;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
 }

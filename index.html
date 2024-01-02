@@ -13,11 +13,28 @@
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP0-vMGrBL0FZMvMOcTGuZWHKgLWbBmpJmvQ&usqp=CAU"
         alt="Chuck Norris Image"
       />
-      <button id="jokeBtn">Get Joke</button>
+
+      <form id="jokeForm">
+        <label for="category">Choose a category:</label>
+        <select id="category" name="category">
+          <option value="Animal">Animal</option>
+          <option value="Career">Career</option>
+          <option value="celebrity">celebrity</option>
+          <option value="dev">dev</option>
+          <option value="explicit">explicit</option>
+          <option value="fashion">fashion</option>
+          <!-- Add more categories as needed -->
+        </select>
+
+        <!-- <button type="button" onclick="getJoke()">Get Joke</button> -->
+
+        <button id="jokeBtn" type="button">Get Joke</button>
+      </form>
     </div>
-    <div class="jokeContainer">
+    <div class="target">
       <h1 class="joke" id="jokeTxt"></h1>
     </div>
+    <div class="footer">all rights reserved &copy; 2024</div>
 
     <!-- js -->
     <script src="script.js"></script>
